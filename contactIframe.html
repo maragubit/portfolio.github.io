@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto &#128187</title>
+    <link rel="stylesheet" href="statics/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="mySkillsBody">
+<img class="close" id="close" src="statics/close.svg" alt="close">
+<h2>Contacto <i class='fa fa-address-book' style='font-size:24px'></i></h2>
+<div class="contacto">
+<p><i class='fa fa-envelope' style='font-size:14px'></i> Email: <a href="mailto:maragubit@gmail.com">maragubit@gmail.com</a></p>
+<p><i class='fa fa-phone' style='font-size:14px'></i> Teléfono: +34 630457830</p>
+</div>
+</body>
+<script>
+    document.getElementById("close").addEventListener("click", function() {
+    window.parent.postMessage("closeIframe", "*");
+    });
+</script>
+</html>

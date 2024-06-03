@@ -3,58 +3,30 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maragubit Portfolio &#128187</title>
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-#matrix {
-  position: absolute;
-  top: 5px;
-  left: 1px;
-
-}
-  
-}
-</style>
+<script src="statics/scripts.js"></script>
+<link rel="stylesheet" href="statics/estilos.css">
 </head>
-<body style="background-color:black">
-<audio class='center' loop > 
-<source src="sound.mp3" type="audio/mp3">
-Tu navegador no soporta la etiqueta de audio.
+<body class="indexBody">
+<audio loop > 
+<source src="statics/sound.mp3" type="audio/mp3">
 </audio>
 <div class='container'>
-<img id='imagen' class='center'src="./conluz.jpg" alt="Portfolio" usemap="#Portfolio">
+<img id='imagen' class='center'src="statics/conluz.jpg" alt="Portfolio" usemap="#Portfolio">
 <map name="Portfolio">
-  <area title="My proyects" shape="rect" coords="302,217,418,300" alt="Proyects" href="MyProyects.htm">
+  <area title="My proyects" shape="rect" coords="302,217,418,300" alt="Proyects" href="#">
   <area title="GitHub" shape="rect" coords="171,12,289,180" alt="Git" href="https://www.github.com/maragubit" target="_blank">
-  <area title="About Me"shape="rect" coords="346,10,558,156" alt="Me" href="AboutMe.htm">
-  <area title="My Skills"shape="poly" coords="199,296,199,322,211,327,265,320,269,298,260,296,258,280,217,280" alt="Skills" href="Skills.htm">
+  <area title="About Me" id="sobreMi" shape="rect" coords="346,10,558,156" alt="Me" href="#">
+  <area title="My Skills" id="habilidades" shape="poly" coords="199,296,199,322,211,327,265,320,269,298,260,296,258,280,217,280" alt="Skills" href="#">
   <area title="light"shape="rect" coords="16,241,46,270" alt="light" onclick="Luz()" href="#">
   <area title="Messi"shape="rect" coords="19,22,147,178" alt="Messi" href="https://en.wikipedia.org/wiki/God" target="_blank">
-  <area title="contact"shape="rect" coords="441,485,547,537" alt="contact" href="Contact.html">
+  <area title="contact" id="contacto" shape="rect" coords="441,485,547,537" alt="contact" href="#">
 </map>
 </div>
+<iframe class="frame" id="skillsFrame" src="skillsIframe.html" hidden></iframe>
+<iframe class="frame" id="contactFrame" src="contactIframe.html" hidden></iframe>
+<iframe class="frame" id="aboutMeFrame" src="aboutMeIframe.html" hidden></iframe>
 <script>
-setTimeout( function ( ) { alert( "Too much light bothers me!\nPlease, turn off the light." ); }, 2000 );
-function Luz(){
-  // Get the image element by its ID
-  var myImage = document.getElementById('imagen');
-  var myAudio = document.getElementsByTagName('audio')[0];
-  // Change the source of the image
-  if (myImage.src.match("conluz")){
-   myImage.src="sinluz.jpg";
-   myAudio.play();
-  }
-  else{
-  myImage.src="conluz.jpg";
-  myAudio.pause();
-  
-  }
-      
-   
-};
-
+setTimeout( function ( ) { alert( "Para descubrir los elementos interactivos,\npulse el interruptor de la luz." ); }, 2000 );
 </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My skills &#128187</title>
+    <link rel="stylesheet" href="statics/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="mySkillsBody">
+<img class="close" id="close" src="statics/close.svg" alt="close">
+<h2>My skills <i class='fa fa-cogs' style='font-size:24px'></i></h2>
+<div class="tablaSkills">
+    <table>
+        <tr> <th><i class='fa fa-eye' style='font-size:14px'></i> Front-End</th> <th><i class='fa fa-eye-slash' style='font-size:14px'></i> Back-End</th>  <th> <i class='fa fa-database' style='font-size:14px'></i> Data-Base</th> <th> <i class='fa fa-server style='font-size:14px'></i>Others</th> </tr>
+        <tr> <td>HTML</td> <td>Python</td> <td>SQL</td> <td>Git</td>  </tr>
+        <tr> <td>CSS</td> <td>Django</td> <td>PL/SQL</td> <td>AWS</td>  </tr>
+        <tr> <td>JavaScript</td> <td>Php</td> <td>ORM</td> <td>Photoshop</td>  </tr>
+        <tr> <td>Jquery</td> <td>Java</td> <td></td> <td>XML</td>  </tr>
+        <tr> <td>Bootstrap</td> <td>C#</td> <td></td> <td></td>  </tr>
+        <tr> <td></td> <td></td> <td></td> <td></td>  </tr>
+        
+    </table>
+</div>
+</body>
+<script>
+    document.getElementById("close").addEventListener("click", function() {
+    window.parent.postMessage("closeIframe", "*");
+    });
+</script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutMe &#128187</title>
+    <link rel="stylesheet" href="statics/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="mySkillsBody">
+<img class="closeAboutMe" id="close" src="statics/close.svg" alt="close">
+<h2>About Me <i class='fa fa-user' style='font-size:24px'></i></h2>
+<img src="statics/aboutMe.jpg" width="600">
+</body>
+<script>
+    document.getElementById("close").addEventListener("click", function() {
+    window.parent.postMessage("closeIframe", "*");
+    });
+</script>
+</html>

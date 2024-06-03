@@ -1,0 +1,77 @@
+.center { /*clase de la imagen del mapa*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexBody{ /*Body html principal*/
+    background-color: black;
+}
+/*GENERAL FRAMES*/
+.frame{/*clase para todos los frames*/
+    width:400px;
+    text-align:center;
+}
+.close{/*icono cerrar ventana*/
+    width:25px;
+    position: sticky;
+    top: 5px;
+    left:380px;
+}
+
+
+/*--------HTML SKILLS FRAME----------*/
+#skillsFrame{ /*Frame de las habilidades*/
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    background-color: beige;
+}
+.mySkillsBody{ /*Body del html de my skills*/
+    text-align: center;
+    
+}
+.mySkillsBody th,td {
+    border-right:2px black solid;
+}
+.mySkillsBody th {
+    border-bottom:2px black solid;
+}
+.mySkillsBody table{
+    border-collapse: collapse;
+    margin: auto;
+}
+.mySkillsBody td:nth-child(4n){
+ border-right: none;
+}
+.mySkillsBody th:nth-child(4n){
+    border-right: none;
+   }
+
+/*----------HTML CONTACT FRAME----------------*/
+#contactFrame{
+    position: absolute;
+    left: 500px;
+    top: 400px;
+    background-color: beige;
+}
+.contacto{
+    text-align:left;
+    margin-left:10%;
+}
+
+/*----------HTML ABOUTME FRAME----------------*/
+#aboutMeFrame{
+    position: absolute;
+    width:600px;
+    left: 500px;
+    height:600px;
+    top: 100px;
+    background-color: beige;
+}
+.closeAboutMe{/*icono cerrar ventana*/
+    width:25px;
+    position: sticky;
+    top: 5px;
+    left:580px;
+}
