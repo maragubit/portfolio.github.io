@@ -18,7 +18,7 @@ a{
     width:400px;
     text-align:center;
     border-radius: 30px;
-    border:solid 3px black;
+    border:solid 3px #562c6d;
 }
 .close{/*icono cerrar ventana*/
     width:25px;
@@ -89,7 +89,7 @@ a{
 /*----------HTML MYPROJECTS FRAME----------------*/
 #myProjectsFrame{
     position: absolute;
-    left: 500px;
+    left: 300px;
     top: 100px;
     background-color: black;
 }
