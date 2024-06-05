@@ -91,6 +91,7 @@ a{
     position: absolute;
     left: 300px;
     top: 100px;
+    min-height:350px;
     background-color: black;
 }
 .misProyectos{
