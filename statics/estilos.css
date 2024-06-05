@@ -1,3 +1,9 @@
+a :visited{
+    color:#d3a7eb;
+}
+a{
+    color:#562c6d;
+}
 .center { /*clase de la imagen del mapa*/
     display: block;
     margin-left: auto;
@@ -19,6 +25,7 @@
     position: sticky;
     top: 5px;
     left:380px;
+    fill:#562c6d;
 }
 
 
@@ -27,17 +34,18 @@
     position: absolute;
     left: 300px;
     top: 300px;
-    background-color: beige;
+    background-color: black;
 }
 .mySkillsBody{ /*Body del html de my skills*/
     text-align: center;
+    color:#562c6d;
     
 }
 .mySkillsBody th,td {
-    border-right:2px black solid;
+    border-right:2px #562c6d solid;
 }
 .mySkillsBody th {
-    border-bottom:2px black solid;
+    border-bottom:2px #562c6d solid;
 }
 .mySkillsBody table{
     border-collapse: collapse;
@@ -55,7 +63,7 @@
     position: absolute;
     left: 500px;
     top: 400px;
-    background-color: beige;
+    background-color: black;
 }
 .contacto{
     text-align:left;
@@ -69,11 +77,23 @@
     left: 500px;
     height:600px;
     top: 100px;
-    background-color: beige;
+    background-color: black;
 }
 .closeAboutMe{/*icono cerrar ventana*/
     width:25px;
     position: sticky;
     top: 5px;
     left:580px;
+}
+
+/*----------HTML MYPROJECTS FRAME----------------*/
+#myProjectsFrame{
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    background-color: black;
+}
+.misProyectos{
+    text-align:center;
+    color:#d3a7eb;
 }

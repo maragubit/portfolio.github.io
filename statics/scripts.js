@@ -25,9 +25,11 @@ document.addEventListener("DOMContentLoaded", function()
     var habilidades = document.getElementById("habilidades");
     var contacto = document.getElementById("contacto");
     var sobreMi = document.getElementById("sobreMi");
+    var misProyectos = document.getElementById("misProyectos");
     arrayFrames.push(habilidades);
     arrayFrames.push(contacto);
     arrayFrames.push(sobreMi);
+    arrayFrames.push(misProyectos);
     for (var i = 0; i < arrayFrames.length; i++) {
         (function(i) {
             arrayFrames[i].addEventListener("click", function(event) {
